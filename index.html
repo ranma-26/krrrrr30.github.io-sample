@@ -1,49 +1,112 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web制作課題1</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-</head>
-<body class="c-block">
-  <div class="l-header">
-    <div class="p-header" >
-      <div class="p-header__top">
-        <header class="p-header__title">いろは</header>
-        <span class="material-icons" id="p-header__icon">menu</span>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web制作課題1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  </head>
+  <body class="c-block">
+    <div class="l-header">
+      <div class="p-header">
+        <img id="mypng-smh" class="p-header--smh" src="css/img/header-mini.png" alt="背景画像376px以下1枚目">
+        <img id="mypng-smhSecond" class="p-header--smhSecond" src="css/img/images-mini2.png" alt="背景画像376px以下2枚目">
+        <img id="mypng" class="p-header__images" src="css/img/header.png" alt="背景画像1枚目">
+        <img id="mypng-second" class="p-header__imagesSecond" src="css/img/images2.png" alt="背景画像2枚目">
+        <div class="p-header__top">
+          <header class="p-header__title">いろは</header>
+          <span class="material-icons" id="p-header__icon">menu</span>
+          <nav class="p-header__home">
+            <ul >
+              <li class="p-header__list"><a class="p-header__list-about" href="#">About iroha</a></li>
+              <li class="p-header__list"><a class="p-header__list-lodge" href="#">Lodge</a></li>
+              <li class="p-header__list"><a class="p-header__list-food" href="#">Food Atelier<br>& Lounge</a></li>
+              <li class="p-header__list"><a class="p-header__list-interactive" href="#">Interactive<br>Program</a></li>
+              <li class="p-header__list"><a class="p-header__list-booking" href="#">Booking</a></li>
+            </ul>
+          </nav>
+        </div>
         <!-- 常時表示メニュー一覧 -->
-        <nav class="p-header__home">
-          <ul >
-            <li class="p-header__list"><a class="p-header__list-about" href="#">About iroha</a></li>
-            <li class="p-header__list"><a class="p-header__list-lodge" href="#">Lodge</a></li>
-            <li class="p-header__list"><a class="p-header__list-food" href="#">Food Atelier<br>& Lounge</a></li>
-            <li class="p-header__list"><a class="p-header__list-interactive" href="#">Interactive<br>Program</a></li>
-            <li class="p-header__list"><a class="p-header__list-booking" href="#">Booking</a></li>
+        <div class="p-header__logo"></div>
+      </div> 
+      <!-- 隠れたメニュー表示 -->
+      <div class="p-hidden">
+        <span class="material-icons" id="p-hidden__closeicon">close</span>
+        <i class="fab fa-facebook-f" id="p-hidden__facebookicon"></i>
+        <i class="fab fa-instagram" id="p-hidden__instagramicon"></i>
+        <nav class="p-hidden__home">
+          <ul>
+            <li class="p-hidden__list"><a class="p-hidden__list-about" href="#">About iroha</a></li>
+            <li class="p-hidden__list"><a class="p-hidden__list-lodge" href="#">Lodge</a></li>
+            <li class="p-hidden__list"><a class="p-hidden__list-food" href="#">Food Atelier<br>& Lounge</a></li>
+            <li class="p-hidden__list"><a class="p-hidden__list-interactive" href="#">Interactive<br>Program</a></li>
+            <li class="p-hidden__list"><a class="p-hidden__list-booking"  href="#">Booking</a></li>
           </ul>
         </nav>
       </div>
-      <div class="p-header__logo"></div>
     </div>
-    <!-- 隠れたメニュー表示 -->
-    <div class="p-hidden">
-      <span class="material-icons" id="p-hidden__closeicon">close</span>
-      <i class="fab fa-facebook-f" id="p-hidden__facebookicon"></i>
-      <i class="fab fa-instagram" id="p-hidden__instagramicon"></i>
-    <nav class="p-hidden__home">
-      <ul>
-        <li class="p-hidden__list"><a class="p-hidden__list-about" href="#">About iroha</a></li>
-        <li class="p-hidden__list"><a class="p-hidden__list-lodge" href="#">Lodge</a></li>
-        <li class="p-hidden__list"><a class="p-hidden__list-food" href="#">Food Atelier<br>& Lounge</a></li>
-        <li class="p-hidden__list"><a class="p-hidden__list-interactive" href="#">Interactive<br>Program</a></li>
-        <li class="p-hidden__list"><a class="p-hidden__list-booking" href="#">Booking</a></li>
-      </ul>
-    </nav>
-  </div>
-  </div>
-  </div>
+    <div class="p-container">
+      <div class="p-container__color"></div>
+      <container class="p-container__text">
+        <h1 class="p-container__title">「stay iroha as live」</h1>
+        <p class="p-container__content">テキストテキストテキスト<br>屋久島の地で、、、いろはで、感じて欲しいこと。</p>
+        <p class="p-container__content">作っていきたい空間。<br>丸さんたちの想い。<br>暮らしの体験宿、いろは</p>
+        <p class="p-container__content">English version About iroha</p>
+        <a class="p-container__buttom" href="#">Read more</a>
+      </container>
+      <img class="p-container__images1" src="css/img/c-image1.png" alt="記事の写真1">
+      <img class="p-container__images2" src="css/img/c-image2.png" alt="記事の写真2">
+    </div>
+    <div class="p-airticle">
+      <h1 class="p-airticle__title">Lodge - 宿泊ロッジ -</h1>
+      <img class="p-airticle__imageFirst" src="css/img/a-image1.png" alt="宿泊ロッジ写真1">
+      <div class="p-airticle__text">
+        <p class="p-airticle__content">豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>海の音、鳥の声、樹々に囲まれて自然のなかでゆったりと、<br>屋久島の暮らしを体験できる宿です。<br>店員は５名で、ベッドは３台、布団を2枚敷くことができます。</p>
+        <p class="p-airticle__contentEnglish">English version About Lodge, stay plan</p>
+        <a class="p-airticle__buttom" href="#">Read more</a>
+      </div>
+      <div class="p-airticle__images">
+        <img class="p-airticle__imagesList" src="css/img/a-image2.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image3.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image4.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image5.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image6.png" alt="">
+      </div>
+    </div>
+    <div class="p-airticle">
+      <h1 class="p-airticle__title">Lodge - 宿泊ロッジ -</h1>
+      <img class="p-airticle__imageFirst" src="css/img/a-image1.png" alt="宿泊ロッジ写真1">
+      <div class="p-airticle__text">
+        <p class="p-airticle__content">豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>海の音、鳥の声、樹々に囲まれて自然のなかでゆったりと、<br>屋久島の暮らしを体験できる宿です。<br>店員は５名で、ベッドは３台、布団を2枚敷くことができます。</p>
+        <p class="p-airticle__contentEnglish">English version About Lodge, stay plan</p>
+        <a class="p-airticle__buttom" href="#">Read more</a>
+      </div>
+      <div class="p-airticle__images">
+        <img class="p-airticle__imagesList" src="css/img/a-image2.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image3.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image4.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image5.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image6.png" alt="">
+      </div>
+    </div>
+    <div class="p-airticle">
+      <h1 class="p-airticle__title">Lodge - 宿泊ロッジ -</h1>
+      <img class="p-airticle__imageFirst" src="css/img/a-image1.png" alt="宿泊ロッジ写真1">
+      <div class="p-airticle__text">
+        <p class="p-airticle__content">豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>海の音、鳥の声、樹々に囲まれて自然のなかでゆったりと、<br>屋久島の暮らしを体験できる宿です。<br>店員は５名で、ベッドは３台、布団を2枚敷くことができます。</p>
+        <p class="p-airticle__contentEnglish">English version About Lodge, stay plan</p>
+        <a class="p-airticle__buttom" href="#">Read more</a>
+      </div>
+      <div class="p-airticle__images">
+        <img class="p-airticle__imagesList" src="css/img/a-image2.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image3.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image4.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image5.png" alt="">
+        <img class="p-airticle__imagesList" src="css/img/a-image6.png" alt="">
+      </div>
+    </div>
   <script src="sass/js/main.js"></script>
 </body>
 </html>
